@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background = "#FCE4EC">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="previous"
+            android:onClick="LessButtons"
+            android:textSize="40dp"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"
+            android:textSize="40dp"
+            android:onClick="LessButtons"/>
+    </LinearLayout>
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Jewish National Fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView0"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView0"
+                android:src="@drawable/jnflogo"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Gives all generations of Jews a unique voice in building a prosperous future for the land of Israel and its people."
+                android:id="@+id/textView1"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="New York City Rescue Mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView1"
+                android:src="@drawable/nycrm"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Provides help and hope to the hungry, hurting and homeless in New York City. Provides emergency shelter, medical clinics, recovery programs"
+                android:id="@+id/textView3"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Unbound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView2"
+                android:src="@drawable/unbound"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Provides financial support, services and encouragement to individuals and their families living on the margins of society around the world."
+                android:id="@+id/textView5"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Water.org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView3"
+                android:src="@drawable/water"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Draws attention to the world's number one health problem, unsafe and inadequate water supplies, and to raise funds to help fight this immense problem."
+                android:id="@+id/textView7"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Intrepid Fallen Heroes Fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView4"
+                android:src="@drawable/intrepid"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Provides services in support of military personnel severely injured in service; helps veterans rejoin society."
+                android:id="@+id/textView9"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Mental Health America"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView5"
+                android:src="@drawable/mental"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Promotes mental health as a critical part of overall wellness, including prevention services for all at risk, and integrated care and treatment for those who need it"
+                android:id="@+id/textView11"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:text="Trevor Project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView6"
+                android:src="@drawable/trevor"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Aims to end suicide among lesbian, gay, bisexual, transgender and questioning (LGBTQ) young people."
+                android:id="@+id/textView13"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Breast Cancer Research Foundation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView7"
+                android:src="@drawable/breastcancer"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Aims to achieve prevention and a cure for breast cancer by providing funding for research at medical centers worldwide."
+                android:id="@+id/textView15"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Save the Children"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView8"
+                android:src="@drawable/save"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Aims to inspire breakthroughs in the way the world treats children, and to achieve immediate and lasting change in their lives."
+                android:id="@+id/textView17"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:text="Rainforest Alliance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                android:gravity="center"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="53dp"
+                android:paddingTop="70dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView9"
+                android:src="@drawable/rainforest"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Aims to conserve biodiversity and ensure sustainable livelihoods by transforming land-use practices, business practices and consumer behavior."
+                android:id="@+id/textView19"
+                android:textIsSelectable="false"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ViewFlipper>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="&lt;/3"
+        android:id="@+id/button1"
+        android:layout_marginBottom="200dp"
+        android:onClick = "MoreText"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background = "#F06292"
+        android:textColor = "#FFFFFF"
+        android:textStyle = "bold"
+        android:textSize = "30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maybe Next Time!"
+        android:id="@+id/button7"
+        android:layout_marginBottom="100dp"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_alignRight="@id/button1"
+        android:background = "#FCE4EC"
+        android:textColor = "#000000"
+        android:textStyle = "bold"
+        android:textSize = "20dp"
+        android:visibility="invisible"
+
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="&lt;3"
+        android:id="@+id/button2"
+        android:onClick = "MoreButtons"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:background = "#F06292"
+        android:textColor = "#FFFFFF"
+        android:textStyle = "bold"
+        android:textSize = "30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background = "#8BC34A"
+        android:text="Donation Page"
+        android:textColor = "#FFFFFF"
+        android:textStyle = "bold"
+        android:visibility="invisible"
+        android:onClick="getURL"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share on Facebook"
+        android:id="@+id/button4"
+        android:background = "#3F51B5"
+        android:textColor = "#FFFFFF"
+        android:textStyle = "bold"
+        android:visibility="invisible"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Others"
+        android:id="@+id/button5"
+        android:background = "#BA68C8"
+        android:textColor = "#FFFFFF"
+        android:textStyle = "bold"
+        android:visibility="invisible"
+        android:layout_below="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:textColor = "#FFFFFF"
+        android:background = "#BDBDBD"
+        android:textStyle = "bold"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+

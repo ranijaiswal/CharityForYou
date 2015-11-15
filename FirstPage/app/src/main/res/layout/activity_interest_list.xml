@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DonorInterestList"
+    android:background="#FCE4EC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please select your interests:"
+        android:id="@+id/textView"
+        android:textColor="#931010"
+        android:textSize="40dp"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals"
+        android:id="@+id/checkBox"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox6"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arts and Culture"
+        android:id="@+id/checkBox2"
+        android:textSize="25sp"
+        android:layout_above="@+id/checkBox7"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:id="@+id/checkBox3"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Environment"
+        android:id="@+id/checkBox4"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health"
+        android:id="@+id/checkBox5"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human Rights"
+        android:id="@+id/checkBox6"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="International"
+        android:id="@+id/checkBox7"
+        android:textSize="25sp"
+        android:layout_above="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Religious Organizations"
+        android:id="@+id/checkBox8"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/checkBox7" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:id="@+id/checkBox9"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/button"
+        android:onClick="seeCharities"
+        android:textSize="25dp"
+        android:layout_below="@+id/checkBox9"
+        android:layout_alignEnd="@+id/checkBox4" />
+
+</RelativeLayout>
